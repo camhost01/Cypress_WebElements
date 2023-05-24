@@ -1,0 +1,18 @@
+{
+  "name": "test-xlsx",
+  "version": "1.0.0",
+  "description": "Cypress to read and write over a xlsx file",
+  "main": "index.js",
+  "author": "Camilo Ramos",
+  "scripts": {
+    "cy:op": "cypress open",
+    "test_chrome": "cypress run --browser=chrome",
+    "test_firefox": "cypress run --browser=firefox",
+    "test_edge": "cypress run --browser=edge",
+    "test_electron": "cypress run --browser=electron"
+  },
+  "devDependencies": {
+    "cypress": "^12.0.0",
+    "cypress-iframe": "^1.0.1"
+  }
+}

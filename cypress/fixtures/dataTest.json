@@ -1,0 +1,10 @@
+{
+  "rahulshettyacademyURL": "https://rahulshettyacademy.com/AutomationPractice/",
+  "swags_labsURL": "https://www.saucedemo.com/",
+  "iFrameURL": "https://demo.automationtesting.in/Frames.html",
+  "swags_labs_users": ["standard_user","locked_out_user","problem_user","performance_glitch_user"],
+  "swags_labs_passwords": "secret_sauce",
+  "checkoutName": "Test",
+  "checkoutLName": "Input",
+  "checkoutZC": "65236"
+}

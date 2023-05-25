@@ -1,9 +1,7 @@
-# Cypress_Practice_Elements
-
 # Cypress 
 ## Practice with web elements
 
-This repository was built for manual testers who are interested in starting to study front-end automation. Is based on three different free websites designed to help manual testers in their practices.
+This repository was build for manual testers who are interested in starting to study front-end automation. Is based on three different free websites designed to help manual testers in their practices.
 
 - [rahulshetty academy](https://rahulshettyacademy.com/AutomationPractice/)
 - [swags_labs](https://www.saucedemo.com/)
@@ -12,7 +10,7 @@ This repository was built for manual testers who are interested in starting to s
 ## Requirements
 
 - Git latest version / [Git](https://git-scm.com/download/mac)
-- Visual Studio Code / [VDC](https://code.visualstudio.com/)
+- Visual Studio Code / [VSC](https://code.visualstudio.com/)
 - Cypress  / npm install cypress --save-dev
 
 ## Installation
@@ -31,22 +29,22 @@ git clone https://github.com/camhost01/Cypress_Practice_Elements.git
 ```sh
 npm install cypress --save-dev
 ```
-Extrat all files contained in Cypress_Practice_Elements folder and replace the files with the same name
-- .gitignore
-- cypress
-- cypress_config.js
-- package-lock.json
-- package.js
+Extract all files contained in Cypress_Practice_Elements folder
+- .gitignore > extract 
+- cypress > extract
+- cypress_config.js > extract
+- package-lock.json > extract and replace
+- package.js > extract and replace 
 
 Delete the folder Cypress_Practice_Elements and the folder structure looks like
 
 <img width="345" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/7e5ba67d-60cb-409c-bf6a-f31581f7f558">
 
-### For iframe scenarios execute
+### For iframe scenario in rahulshetty academy
 ```sh
 npm install -D cypress-iframe
 ```
-### Excecute the command in the terminal
+### Open Cypress with custom comamd from package.js
 ```sh
 npm run cy:op
 ```

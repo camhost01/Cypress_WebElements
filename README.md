@@ -17,7 +17,7 @@ This repository was built for manual testers who are interested in starting to s
 
 ## Installation
 
-Create a local folder and opened from visual studio code, in the terminal init git
+Create a local folder and open it from Visual Studio code in the terminal. Type:
 ```sh
 git init
 ```

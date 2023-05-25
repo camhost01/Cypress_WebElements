@@ -26,7 +26,7 @@ clone the project from repository
 ```sh
 git clone https://github.com/camhost01/Cypress_Practice_Elements.git
 ```
-Install cypress dependencies
+### Install cypress dependencies
 
 ```sh
 npm install cypress --save-dev
@@ -39,13 +39,29 @@ Extrat all files contained in Cypress_Practice_Elements folder and replace the f
 - package.js
 
 Delete the folder Cypress_Practice_Elements and the folder structure looks like
+
 <img width="345" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/7e5ba67d-60cb-409c-bf6a-f31581f7f558">
 
-For iframe scenarios execute
+### For iframe scenarios execute
 ```sh
 npm install -D cypress-iframe
 ```
-Excecute the command in the terminal
+### Excecute the command in the terminal
 ```sh
 npm run cy:op
+```
+<img width="1176" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/a43eaa25-c65a-4532-8466-4056bc673973">
+
+### Select your browser and test scenario
+<img width="1073" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/20537b65-0d9f-4317-ad01-8bf43fb8217f">
+
+<img width="1222" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/a1bf4487-a996-4a34-bbcc-1b1719e0cb9d">
+
+### Headless Mode
+In the package.js you can check the script section and select in wich browser you want to execute the scenarios
+<img width="660" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/032ffea6-3de0-46ea-8d79-a55010739964">
+
+If you want to execute in Chrome browser type in your VSC terminal
+```sh
+npm run test_chrome
 ```

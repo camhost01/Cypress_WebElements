@@ -1,0 +1,51 @@
+# Cypress_Practice_Elements
+
+# Cypress 
+## Practice with web elements
+
+This repository was built for manual testers who are interested in starting to study front-end automation. Is based on three different free websites designed to help the manual testers in their practices.
+
+- [rahulshetty academy](https://rahulshettyacademy.com/AutomationPractice/)
+- [swags_labs](https://www.saucedemo.com/)
+- [Iframe Automation demo site](https://demo.automationtesting.in/Frames.html) Single and Nested iFrame
+
+## Requirements
+
+- Git latest version / [Git](https://git-scm.com/download/mac)
+- Visual Studio Code / [VDC](https://code.visualstudio.com/)
+- Cypress  / npm install cypress --save-dev
+
+## Installation
+
+Create a local folder and opened from visual studio code, in the terminal init git
+```sh
+git init
+```
+clone the project from repository 
+
+```sh
+git clone https://github.com/camhost01/Cypress_Practice_Elements.git
+```
+Install cypress dependencies
+
+```sh
+npm install cypress --save-dev
+```
+Extrat all files contained in Cypress_Practice_Elements folder and replace the files with the same name
+- .gitignore
+- cypress
+- cypress_config.js
+- package-lock.json
+- package.js
+
+Delete the folder Cypress_Practice_Elements and the folder structure looks like
+<img width="345" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/7e5ba67d-60cb-409c-bf6a-f31581f7f558">
+
+For iframe scenarios execute
+```sh
+npm install -D cypress-iframe
+```
+Excecute the command in the terminal
+```sh
+npm run cy:op
+```

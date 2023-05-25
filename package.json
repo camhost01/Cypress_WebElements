@@ -1,7 +1,7 @@
 {
   "name": "test-xlsx",
   "version": "1.0.0",
-  "description": "Cypress to read and write over a xlsx file",
+  "description": "Cypress to practice with webelements",
   "main": "index.js",
   "author": "Camilo Ramos",
   "scripts": {

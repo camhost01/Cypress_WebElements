@@ -3,7 +3,7 @@
 # Cypress 
 ## Practice with web elements
 
-This repository was built for manual testers who are interested in starting to study front-end automation. Is based on three different free websites designed to help the manual testers in their practices.
+This repository was built for manual testers who are interested in starting to study front-end automation. Is based on three different free websites designed to help manual testers in their practices.
 
 - [rahulshetty academy](https://rahulshettyacademy.com/AutomationPractice/)
 - [swags_labs](https://www.saucedemo.com/)

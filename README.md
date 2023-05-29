@@ -24,7 +24,7 @@ clone the project from repository
 ```sh
 git clone https://github.com/camhost01/Cypress_Practice_Elements.git
 ```
-move folder
+move to the folder
 ```sh
 cd Cypress_Practice_Elements.git
 ```

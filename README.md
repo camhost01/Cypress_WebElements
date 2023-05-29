@@ -26,7 +26,7 @@ git clone https://github.com/camhost01/Cypress_Practice_Elements.git
 ```
 move to the folder
 ```sh
-cd Cypress_Practice_Elements.git
+cd Cypress_Practice_Elements
 ```
 ### Install cypress dependencies
 ```sh

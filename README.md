@@ -24,22 +24,14 @@ clone the project from repository
 ```sh
 git clone https://github.com/camhost01/Cypress_Practice_Elements.git
 ```
+move folder
+```sh
+cd Cypress_Practice_Elements.git
+```
 ### Install cypress dependencies
-
 ```sh
 npm install cypress --save-dev
 ```
-Extract all files contained in Cypress_Practice_Elements folder
-- .gitignore > extract 
-- cypress > extract
-- cypress_config.js > extract
-- package-lock.json > extract and replace
-- package.js > extract and replace 
-
-Delete the folder Cypress_Practice_Elements and the folder structure looks like
-
-<img width="345" alt="image" src="https://github.com/camhost01/Cypress_Practice_Elements/assets/39304271/7e5ba67d-60cb-409c-bf6a-f31581f7f558">
-
 ### For iframe scenario in rahulshetty academy
 ```sh
 npm install -D cypress-iframe

@@ -62,8 +62,10 @@ npm run test_chrome
 ```
 ### Visual validation
 The scenarios was build for take a first image and then hide a element in website and take new screenshot, that scenario is design for fail in each execution
+
 <img width="1197" alt="image" src="https://github.com/camhost01/Cypress_WebElements/assets/39304271/e67ea8a9-c76e-4dea-94b7-3e867b9e3a58">
 
 The difference is displayed in snapshots folder
+
 <img width="346" alt="image" src="https://github.com/camhost01/Cypress_WebElements/assets/39304271/250c6389-4e7f-45ab-b3f7-dd50dd75f4f6">
 

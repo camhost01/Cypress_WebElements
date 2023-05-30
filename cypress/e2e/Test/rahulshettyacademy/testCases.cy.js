@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 import objects from '../../PageObject/rahulshettyacademy/page'
-import data from '/Users/cramos/Documents/Automat Projects/Cypress/WebElements/cypress/fixtures/dataTest.json'
+import data from '/cypress/fixtures/dataTest.json'
 
 describe('Test Scenarios for Automation Practice', () => {
 

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import datatest from '/Users/cramos/Documents/Automat Projects/Cypress/WebElements/cypress/fixtures/dataTest.json'
+import datatest from '/cypress/fixtures/dataTest.json'
 import loginPage from '../../PageObject/swags_labs/loginPage'
 import landingPage from '../../PageObject/swags_labs/landingPage'
 import cartScenarios from '../../PageObject/swags_labs/cartPage'

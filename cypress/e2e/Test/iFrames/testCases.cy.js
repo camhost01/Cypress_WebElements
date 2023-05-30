@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import datatest from '/Users/cramos/Documents/Automat Projects/Cypress/WebElements/cypress/fixtures/dataTest.json'
+import datatest from '/cypress/fixtures/dataTest.json'
 import iframepage from '../../PageObject/iFrames/iframePage'
 
 describe('Test escenarios swag_lab', ()=>{

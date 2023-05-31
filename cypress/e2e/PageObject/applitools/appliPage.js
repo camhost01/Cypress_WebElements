@@ -13,6 +13,7 @@ class appliPage{
 
     hideElement(){
         this.elements.pagebtn()
+        .should('be.visible')
         .invoke('hide')
     }
 }

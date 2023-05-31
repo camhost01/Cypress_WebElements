@@ -8,11 +8,10 @@ describe('Using Resemgle to campare images',()=>{
         cy.visit(datatest.appliURL)
         applipage.loginWeb()
     })
-    it('should campare images',()=>{
-        cy.matchImageSnapshot()       //configuration based on website= 'https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595'
-        applipage.hideElement()
-        cy.matchImageSnapshot()
-        
+    it('Compare images',()=>{
+        cy.matchImageSnapshot()        //configuration based on website= 'https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595'
+        applipage.hideElement()       //hide btn element
+        cy.matchImageSnapshot()      //take a picture again
     })
 
 })

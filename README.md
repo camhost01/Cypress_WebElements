@@ -33,14 +33,7 @@ cd Cypress_WebElements
 ```sh
 npm install cypress --save-dev
 ```
-### For iframe scenario in rahulshetty academy
-```sh
-npm install -D cypress-iframe
-```
-### For visual validation scenario
-```sh
-npm install cypress-image-snapshot
-```
+
 ### Open Cypress with custom comamd from package.js
 ```sh
 npm run cy:op

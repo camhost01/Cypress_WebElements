@@ -13,7 +13,6 @@ This repository was build for manual testers who are interested in starting to s
 - Git latest version / [Git](https://git-scm.com/download/mac)
 - Visual Studio Code / [VSC](https://code.visualstudio.com/)
 - Cypress  / npm install cypress --save-dev
-- cypress visual validations / npm install cypress-image-snapshot
 
 ## Installation
 

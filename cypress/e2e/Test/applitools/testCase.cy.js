@@ -9,9 +9,9 @@ describe('Using Resemgle to campare images',()=>{
         applipage.loginWeb()
     })
     it('Compare images',()=>{
-        cy.matchImageSnapshot()        //configuration based on website= 'https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595'
+        cy.matchImageSnapshot("Landing_Page")        //configuration based on website= 'https://medium.com/norwich-node-user-group/visual-regression-testing-with-cypress-io-and-cypress-image-snapshot-99c520ccc595'
         applipage.hideElement()       //hide btn element
-        cy.matchImageSnapshot()      //take a picture again
+        cy.matchImageSnapshot("Landing_Page")      //take a picture again
     })
 
 })

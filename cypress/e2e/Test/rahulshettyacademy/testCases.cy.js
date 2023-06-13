@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import objects from '../../PageObject/rahulshettyacademy/page'
+import actions from '../../Actions/rahulacademy/actions'
 import data from '/cypress/fixtures/dataTest.json'
 
 describe('Test Scenarios for Automation Practice', () => {
@@ -9,23 +9,23 @@ describe('Test Scenarios for Automation Practice', () => {
  })
 
   it('Section 1 - Radiobtn/Inputxt/Dropdown/Checkbox', () => {
-      objects.selectRadiobtn()
-      objects.inputText('Colombia')
-      objects.dropDownSelect()
-      objects.checkBoxSelect()
+      actions.selectRadiobtn()
+      actions.typeText('Colombia')
+      actions.dropDownSelect()
+      actions.checkBoxSelect()
   })
   it('Section 2 - New_Window/Tab_Example/Switch_Alert', () => {
-      objects.openTabWindow()
-      objects.popupAlert_Confirm() //Cypress auto-accept alerts and pop-ups
+      actions.openTabWindow()
+      actions.popupAlert_Confirm() //Cypress auto-accept alerts and pop-ups
   })
   it('Section 3 - GetTable values', () => {
-      objects.findValueinTable('TestNG')
+      actions.findValueinTable('TestNG')
   })
   it('Section 4 - Mouse Over', () => {
-      objects.validateTextHideShow()
+      actions.validateTextHideShow()
   })
   it('Section 5 - Iframe_Interaction', () => {
-    objects.iframeInteraction()
+    actions.iframeInteraction()
   })
   
 }) 

@@ -1,5 +1,3 @@
-
-
 class landingPage{
     elements={
         burgermenu: ()=> cy.get('#react-burger-menu-btn'),
@@ -15,45 +13,5 @@ class landingPage{
         faceblink: ()=> cy.get('a[href="https://www.facebook.com/saucelabs"]'),
         linkdinlink: ()=> cy.get('a[href="https://www.linkedin.com/company/sauce-labs/"]')
     }
-
-    userlogOut(){
-        this.elements.burgermenu()
-        .should('be.visible').click()
-        this.elements.logoutlink()
-        .should('be.visible').click()  
-    }
-    addProduct(number){        
-        cy.landingP_addProduct(number)
-        this.elements.alercartproduct()
-        .should('be.visible')
-    }
-    removeProduct(number){
-        cy.landingP_rmvProduct(number)
-        this.elements.alercartproduct()
-        .should('not.exist')
-    }
-    filteringProduct(){
-        this.elements.filterproduct().select('Name (A to Z)')
-        this.elements.inventoryfilter().contains('Sauce Labs Backpack')
-        this.elements.filterproduct().select('Name (Z to A)')
-        this.elements.inventoryfilter().contains('Test.allTheThings() T-Shirt (Red)')  
-        this.elements.filterproduct().select('Price (low to high)')
-        this.elements.inventoryprice().contains('7.99')  
-        this.elements.filterproduct().select('Price (high to low)')
-        this.elements.inventoryprice().contains('49.99')  
-    }
-    cartIconClick(){
-        this.elements.cartIcon().click()
-    }
-    openLandingLinks(){
-        this.elements.twiterlink()
-        .should('be.visible')
-        .click()
-        this.elements.linkdinlink()
-        .should('be.visible')
-        .click()
-
-    }
-
 }
 module.exports = new landingPage()

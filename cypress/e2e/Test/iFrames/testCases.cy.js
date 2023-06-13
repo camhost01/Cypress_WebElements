@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import datatest from '/cypress/fixtures/dataTest.json'
-import iframepage from '../../PageObject/iFrames/iframePage'
+import actions from '../../Actions/iframe/actions'
 
 describe('Test escenarios swag_lab', ()=>{
 
@@ -10,9 +10,9 @@ describe('Test escenarios swag_lab', ()=>{
     })
 
     it('Single iFrame', ()=>{
-        iframepage.singleIFform1()
+        actions.typeSingleIframe()
     })
     it('Nested iFrame', ()=>{
-        iframepage.nestedIframe()
+        actions.typeNestedIframe()
     })
 })

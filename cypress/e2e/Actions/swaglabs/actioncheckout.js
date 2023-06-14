@@ -1,4 +1,5 @@
 import checkoutpag from '../../PageObject/swags_labs/checkoutPage'
+import landingPage from '../../PageObject/swags_labs/landingPage'
 class actioncheckout{
     validateDataform(){
         checkoutpag.elements.continuebtn().click()

@@ -6,6 +6,11 @@
   "author": "Camilo Ramos",
   "scripts": {
     "cy:op": "cypress open",
+    "imgApprove":"cypress run --env updateSnapshots=true",
+    "visualSc": "npx cypress run --spec cypress/e2e/Test/applitools/testCase.cy.js --browser=electron",
+    "iframSc": "npx cypress run --spec cypress/e2e/Test/iFrames/testCases.cy.js --browser=electron",
+    "academySc": "npx cypress run --spec cypress/e2e/Test/rahulshettyacademy/testCases.cy.js --browser=electron",
+    "swagLabSc": "npx cypress run --spec cypress/e2e/Test/swags_labs/testCases.cy.js --browser=electron",
     "test_chrome": "cypress run --browser=chrome",
     "test_firefox": "cypress run --browser=firefox",
     "test_edge": "cypress run --browser=edge",

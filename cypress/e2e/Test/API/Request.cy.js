@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 
+
 describe('Test of API using cypress',()=>{
 
     it('GET - check status 200',()=>{
@@ -40,6 +41,48 @@ describe('Test of API using cypress',()=>{
         cy.request('GET', 'https://reqres.in/api/user')
         .then((response)=>{
             expect(response.duration).to.be.lessThan(300)
+        })
+    })
+    it('Validate specific values in response', ()=>{
+        cy.request('GET','https://reqres.in/api/users')
+        .then((response)=>{
+            expect(response.body.data[0].email).to.include('george')     //value george in "email" field
+        })
+    })
+    it('PUT - update values', ()=>{
+        cy.request('PUT', 'https://reqres.in/api/users/2', {
+            name: 'change',
+            job: 'values'
+        }).then((response)=>{
+                expect(response.body.name).to.include('nge')     
+            })
+    })
+    it('DEL - Delete data', ()=>{
+        cy.request('DELETE','https://reqres.in/api/users/2')
+        .then((response)=>{
+            expect(response.status).to.equal(204)
+        })
+    })
+    it('Autentication - Success', ()=>{
+        cy.request('POST','https://reqres.in/api/register',{
+            email: 'eve.holt@reqres.in',
+            password: 'pistol'
+        }).then((response)=>{
+            expect(response.status).to.equal(200)
+            expect(response.body.id).to.equal(4)
+            expect(response.body.token).to.equal('QpwL5tke4Pnpja7X4')
+        })
+    })
+    it('Autentication - Fail', ()=>{
+        cy.request({
+            method: 'POST',
+            url: 'https://reqres.in/api/register',
+            failOnStatusCode: false,
+            body: {
+              email: 'eve.holt@reqres.in'
+            }
+          }).then((response)=>{
+            expect(response.body.error).to.contain('Missing')
         })
     })
     

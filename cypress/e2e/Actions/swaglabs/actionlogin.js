@@ -1,5 +1,5 @@
 import logpage from '../../PageObject/swags_labs/loginPage'
-import dataTest from '/Users/cramos/Documents/Automat Projects/Cypress/WebElements/cypress/fixtures/dataTest.json'
+import dataTest from '../../../fixtures/dataTest.json'
 import landingpage from '../../PageObject/swags_labs/landingPage'
 class actionlogin{
 

@@ -10,7 +10,7 @@ class actionsAppli{
     }
 
     hideElement(){
-        pageappli.elements.pagebtn()
+        pageappli.elements.panelright()
         .should('be.visible')
         .invoke('hide')
     }

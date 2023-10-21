@@ -22,7 +22,7 @@ git init
 ```
 clone the project from repository 
 ```sh
-git clone https://github.com/camhost01/Cypress_Practice_Elements.git
+git clone https://github.com/camhost01/Cypress_WebElements.git
 ```
 move to the folder
 ```sh
@@ -30,7 +30,7 @@ cd Cypress_WebElements
 ```
 ### Install cypress dependencies
 ```sh
-npm install cypress --save-dev
+npm install cypress@latest --save-dev
 ```
 
 ### Open Cypress with custom comamd from package.js

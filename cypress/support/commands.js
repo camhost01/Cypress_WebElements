@@ -1,5 +1,5 @@
 import landinPage from '../../cypress/e2e/PageObject/swags_labs/landingPage'
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+import { addMatchImageSnapshotCommand } from '@simonsmith/cypress-image-snapshot/command';
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite

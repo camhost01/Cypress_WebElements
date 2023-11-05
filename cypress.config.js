@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-const { addMatchImageSnapshotPlugin } = require('cypress-image-snapshot/plugin');
+const { addMatchImageSnapshotPlugin } = require('@simonsmith/cypress-image-snapshot/plugin');
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
 module.exports = defineConfig({

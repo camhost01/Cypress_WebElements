@@ -1,5 +1,6 @@
 import landinPage from '../../cypress/e2e/PageObject/swags_labs/landingPage'
-import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
+const compareSnapshotCommand = require('cypress-image-diff-js/dist/command');
+compareSnapshotCommand();
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -44,16 +45,3 @@ Cypress.Commands.add('landingP_rmvProduct',(number) =>{
     })
 
 })
-addMatchImageSnapshotCommand({
-    failureThreshold: 0.00,
-    failureThresholdType: 'percent',
-    customDiffConfig: { threshold: 0.0 },
-    capture: 'viewport',
-  });
-  Cypress.Commands.add("setResolution", (size) => {
-    if (Cypress._.isArray(size)) {
-       cy.viewport(size[0], size[1]);
-     } else {
-      cy.viewport(size);
-    }
-   })

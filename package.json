@@ -15,19 +15,16 @@
     "test_firefox": "cypress run --browser=firefox",
     "test_edge": "cypress run --browser=edge",
     "test_electron": "cypress run --browser=electron",
-    "generateReport": "npx mochawesome-merge cypress/reports/html/.jsons/*.json > merged-report.json && npx mochawesome-report-generator merged-report.json"
+    "generateReport": "npx mochawesome-merge cypress/reports/html/.jsons/*.json > merged-report.json && npx mochawesome-report-generator merged-report.json",
+    "update_baseImge": "cypress-image-diff -u"
   },
   "devDependencies": {
-    "@types/resemblejs": "^4.1.0",
-    "cypress": "^12.13.0",
+    "cypress": "^13.5.0",
     "cypress-iframe": "^1.0.1",
+    "cypress-image-diff-js": "^1.32.0",
     "cypress-mochawesome-reporter": "^3.6.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",
     "mochawesome-report-generator": "^6.2.0"
-  },
-  "dependencies": {
-    "cypress-image-snapshot": "^4.0.1",
-    "resemblejs": "^4.1.0"
   }
 }

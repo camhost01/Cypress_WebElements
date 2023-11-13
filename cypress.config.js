@@ -1,5 +1,5 @@
 const { defineConfig } = require("cypress");
-const { addMatchImageSnapshotPlugin } = require('@simonsmith/cypress-image-snapshot/plugin');
+const getCompareSnapshotsPlugin = require('cypress-image-diff-js/dist/plugin');
 const { beforeRunHook, afterRunHook } = require('cypress-mochawesome-reporter/lib');
 
 module.exports = defineConfig({
@@ -12,7 +12,7 @@ module.exports = defineConfig({
     viewportWidth: 1720,
     viewportHeight: 1080,
     setupNodeEvents(on, config) {
-      addMatchImageSnapshotPlugin(on, config)
+      getCompareSnapshotsPlugin(on, config);
       on('before:run', async (details) => {
         console.log('override before:run');
         await beforeRunHook(details);

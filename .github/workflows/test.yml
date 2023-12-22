@@ -1,6 +1,8 @@
 name: Remote execution Cypress
 
-on: push
+on:
+  schedule:
+    - cron: '33 15 * * *'
 
 jobs:
  cypress-run:
@@ -16,5 +18,18 @@ jobs:
       with: 
         browser: chrome
         headed: true
+    # after the test run completes store videos and any screenshots
+    - uses: actions/upload-artifact@v4
+       # add the line below to store screenshots only on failures
+       # if: failure()
+      with:
+         name: cypress-screenshots
+         path: cypress/screenshots
+         if-no-files-found: ignore # 'warn' or 'error' are also available, defaults to `warn`
+    - uses: actions/upload-artifact@v4
+      with:
+         name: cypress-videos
+         path: cypress/videos
+         if-no-files-found: ignore # 'warn' or 'error' are also available, defaults to `warn`
 
     

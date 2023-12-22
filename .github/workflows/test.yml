@@ -1,0 +1,28 @@
+name: Remote execution Cypress
+
+on:
+  schedule:
+    - cron: '0 1 * * 5'
+
+jobs:
+  ejecutar-pruebas:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v4
+
+    - name: Instalar dependencias
+      run: npm install
+
+    - name: Ejecutar pruebas personalizadas desde package.json
+      run: npm run test_chrome
+
+    - name: Almacenar archivos de evidencia
+      uses: actions/upload-artifact@v3
+      with:
+        name: evidencia-cypress
+        path: |
+          cypress/screenshots
+          cypress/videos
+    

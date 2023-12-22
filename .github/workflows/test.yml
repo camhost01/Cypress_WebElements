@@ -2,7 +2,7 @@ name: Remote execution Cypress
 
 on:
   schedule:
-    - cron: '33 15 * * *'
+    - cron: '40 3 * * *'
 
 jobs:
  cypress-run:

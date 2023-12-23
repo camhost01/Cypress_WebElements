@@ -2,7 +2,7 @@ name: Remote execution Cypress
 
 on:
   schedule:
-    - cron: '10 18 * * *'
+    - cron: '0 2 * * 5,6'
 # * minute (0 - 59) # * hour (0 - 23) # * day of the month (1 - 31) # * month (1 - 12 or JAN-DEC) # * day of the week (0 - 6 or SUN-SAT)
   push: 
     branches:
@@ -38,6 +38,6 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
          name: Report html
-         path: Cypress_WebElements/cypress/reports/html/index.html
+         path: cypress/reports/html/index.html
 
     

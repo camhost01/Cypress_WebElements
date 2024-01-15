@@ -1,16 +1,16 @@
 /// <reference types="cypress" />
 
-import actions from '../../Actions/applitools/actions'
+import appliPage from '../../Actions/applitools/actions'
 import datatest from '/cypress/fixtures/dataTest.json'
 
-describe.skip('Using Image-Diff to campare images',()=>{
+describe('Using Image-Diff to campare images',()=>{
     beforeEach(()=>{
         cy.visit(datatest.appliURL)
-        actions.loginWebSite()
+        appliPage.loginWebSite()
     })
     it('Compare images',()=>{
         cy.compareSnapshot("Landing_Page")        
-        actions.hideElement()                       //hide btn element
+        appliPage.hideElement()                       //hide btn element
         cy.compareSnapshot("Landing_Page")      //take a picture again
     })
 

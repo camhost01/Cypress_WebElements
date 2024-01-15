@@ -1,0 +1,31 @@
+{
+  "total": 1,
+  "totalPassed": 0,
+  "totalFailed": 1,
+  "totalSuites": 1,
+  "suites": [
+    {
+      "name": "testCase.cy.js",
+      "path": "cypress\\e2e\\Test\\applitools\\testCase.cy.js",
+      "tests": [
+        {
+          "status": "fail",
+          "name": "testCase.cy-Landing_Page",
+          "percentage": 0.027368649797807086,
+          "failureThreshold": 0,
+          "specPath": "cypress\\e2e\\Test\\applitools\\testCase.cy.js",
+          "specFilename": "testCase.cy.js",
+          "baselinePath": "cypress\\images\\baseline\\testCase.cy-Landing_Page.png",
+          "diffPath": "cypress\\images\\diff\\testCase.cy-Landing_Page.png",
+          "comparisonPath": "cypress\\images\\comparison\\testCase.cy-Landing_Page.png"
+        }
+      ]
+    }
+  ],
+  "startedAt": "2023-12-24T22:33:39.590Z",
+  "endedAt": "2023-12-24T22:33:52.552Z",
+  "duration": 12962,
+  "browserName": "electron",
+  "browserVersion": "114.0.5735.289",
+  "cypressVersion": "13.5.0"
+}

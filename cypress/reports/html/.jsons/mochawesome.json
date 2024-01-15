@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2023-12-24T22:33:39.600Z",
+    "end": "2023-12-24T22:33:52.564Z",
+    "duration": 12964,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8d6eb9b0-926d-46a2-b6ef-e5ffb5c0421b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Test\\applitools\\testCase.cy.js",
+      "file": "cypress\\e2e\\Test\\applitools\\testCase.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7dec83c8-a175-4609-a668-43b1e5ae72fc",
+          "title": "Using Image-Diff to campare images",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Compare images",
+              "fullTitle": "Using Image-Diff to campare images Compare images",
+              "timedOut": null,
+              "duration": 10848,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "[\n  {\n    \"title\": \"cypress-mochawesome-reporter-videos-failed\",\n    \"value\": \"cypress\\\\e2e\\\\Test\\\\applitools\\\\testCase.cy.js\"\n  },\n  {\n    \"title\": \"cypress-mochawesome-reporter-screenshots\",\n    \"value\": [\n      [\n        \"\\\\testCase.cy.js\\\\testCase.cy-Landing_Page.png\",\n        \"\\\\testCase.cy.js\\\\testCase.cy-Landing_Page.png\",\n        \"\\\\testCase.cy.js\\\\Using Image-Diff to campare images -- Compare images (failed).png\"\n      ]\n    ]\n  }\n]",
+              "code": "cy.compareSnapshot(\"Landing_Page\");\n_actions.default.hideElement(); //hide btn element\ncy.compareSnapshot(\"Landing_Page\"); //take a picture again",
+              "err": {
+                "message": "Error: Image difference greater than threshold: 0",
+                "estack": "Error: Image difference greater than threshold: 0\n    at Context.eval (webpack://webelement-practice/./node_modules/cypress-recurse/src/index.js:152:0)",
+                "diff": null
+              },
+              "uuid": "7f90e22c-2759-4d56-b76f-c17b91beed6d",
+              "parentUUID": "7dec83c8-a175-4609-a668-43b1e5ae72fc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "7f90e22c-2759-4d56-b76f-c17b91beed6d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 10848,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress\\reports\\html\\.jsons"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

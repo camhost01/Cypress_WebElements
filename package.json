@@ -7,7 +7,7 @@
   "scripts": {
     "cy:op": "cypress open",
     "imgApprove": "cypress run --env updateSnapshots=true",
-    "visualSc": "npx cypress run --spec cypress/e2e/Test/applitools/testCase.cy.js --browser=electron",
+    "visualSc": "npx cypress run --spec cypress/e2e/Test/applitools/testCase.cy.js --browser=electron --headed",
     "iframSc": "npx cypress run --spec cypress/e2e/Test/iFrames/testCases.cy.js --browser=electron",
     "academySc": "npx cypress run --spec cypress/e2e/Test/rahulshettyacademy/testCases.cy.js --browser=electron",
     "swagLabSc": "npx cypress run --spec cypress/e2e/Test/swags_labs/testCases.cy.js --browser=electron",
@@ -16,12 +16,14 @@
     "test_edge": "cypress run --browser=edge",
     "test_electron": "cypress run --browser=electron",
     "generateReport": "npx mochawesome-merge cypress/reports/html/.jsons/*.json > merged-report.json && npx mochawesome-report-generator merged-report.json",
-    "update_baseImge": "cypress-image-diff -u"
+    "update_baseImge": "cypress-image-diff -u",
+    "comparison_report": "cypress-image-diff-html-report generate --rf cypress/cypress-image-diff-html-report/cypress_visual_report.json"
   },
   "devDependencies": {
     "cypress": "^13.5.0",
     "cypress-iframe": "^1.0.1",
-    "cypress-image-diff-js": "^1.32.0",
+    "cypress-image-diff-html-report": "^2.0.2",
+    "cypress-image-diff-js": "^2.1.3",
     "cypress-mochawesome-reporter": "^3.6.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.3.0",

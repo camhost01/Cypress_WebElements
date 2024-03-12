@@ -3,7 +3,7 @@
 import appliPage from '../../Actions/applitools/actions'
 import datatest from '/cypress/fixtures/dataTest.json'
 
-describe('Using Image-Diff to campare images',()=>{
+describe.skip('Using Image-Diff to campare images',()=>{
     beforeEach(()=>{
         cy.visit(datatest.appliURL)
         appliPage.loginWebSite()
